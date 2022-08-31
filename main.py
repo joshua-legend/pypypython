@@ -1,5 +1,5 @@
 # import csv
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 #
 # f = open('weathers.csv',encoding='euc-kr')
 # data = csv.reader(f)
@@ -28,3 +28,10 @@
 #
 # # for x in data:
 # #     print(list(x))
+
+sales = [1,2,3,4,5]
+month = ['jan','feb','mar','apl','may']
+plt.rc('font', family="Malgun Gothic")
+plt.title("안녕 디지몬")
+plt.plot(sales,month)
+plt.show()

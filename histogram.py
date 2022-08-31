@@ -11,8 +11,7 @@ for x in data:
         if(x[0].split("-")[1] == '02'):
             weatherList.append(float(x[-1]))
 
-print(weatherList)
-plt.plot(weatherList, color="skyblue")
+plt.hist(weatherList, bins=500,color="red")
 plt.show()
 f.close()
 
