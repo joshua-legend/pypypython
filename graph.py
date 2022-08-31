@@ -15,3 +15,4 @@ plt.xlabel("키")
 plt.ylabel("몸무게")
 plt.colorbar(label="키")
 plt.show()
+#
