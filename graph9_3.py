@@ -12,4 +12,9 @@ for x in data:
        month = int(x[0].split('-')[1]) - 10
        taxi[month] += int(x[6])
 
-print(taxi)
+
+plt.rc('font', family='Malgun Gothic')
+plt.title('10~12월 택시비 지출현황')
+plt.plot(['10월','11월','12월'], taxi, color='crimson', label='택시비 지출액')
+plt.legend()
+plt.show()
