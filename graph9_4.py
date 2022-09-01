@@ -6,7 +6,7 @@ data = csv.reader(f)
 def foodCheck(store):
     list = ["형제", "스타벅스", "이마트", "파리바게트"]
     for x in list:
-        if(x.find(store)):
+        if(x in store):
             return True
 # next(data)
 # ['이용일시', '승인번호', '본인구분', '브랜드', '이용카드', '가맹점명', '이용금액', '이용구분', '매입상태']
